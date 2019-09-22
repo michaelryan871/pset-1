@@ -77,6 +77,16 @@ public class ProblemSet1 {
         int test3 = 82;
 
 
+        double homeworkAvg = (homework1 + homework2 + homework3) / 3.00;
+        double homeworkTotal = homeworkAvg * 0.15;
+        double quizAvg = (quiz1 + quiz2 + quiz3) / 3.00;
+        double quizTotal = quizAvg * 0.35;
+        double testAvg = (test1 + test2 + test3) / 3.00;
+        double testTotal = testAvg * 0.50;
+        double finalGrade = homeworkTotal + quizTotal + testTotal;
+        System.out.println ("\n" + String.format("%.2f", finalGrade) + "%");
+
+
 
         /*
          * Exercise 5.
@@ -84,6 +94,22 @@ public class ProblemSet1 {
          * I make $12.50/hour working as a cashier at a local supermarket. How much money
          * will I make this week?
          */
+
+
+
+         /*
+            Monday, 7.5 hours
+            Tuesday, 8 hours
+            Wednesday, 10.5 hours
+            Thursday, 9.5 hours
+            Friday, 6 hours
+            Saturday, 11.5 hours
+            Sunday, 0 hours
+        */
+            final double HOURLY_WAGE = 12.5;
+            double amountOfHours = 7.5 + 8 + 10.5 + 9.5 + 6 + 11.5; // 53
+            double money = HOURLY_WAGE * amountOfHours;
+            System.out.println ("\n" + String.format("$%.2f", money) + ".");
 
 
 
