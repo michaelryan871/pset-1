@@ -130,8 +130,8 @@ public class ProblemSet1 {
            310.5375 PRE_TAX
            0.3737%
          */
-         double completeSalary = (SALARY / 24);
-         double takeHomePay = completeSalary * (1 - FEDERAL_TAX) * (1 - STATE_TAX) * (1 - PRE_TAX);
+         double weekSalary = (SALARY / 24);
+         double takeHomePay = weekSalary * (1 - FEDERAL_TAX) * (1 - STATE_TAX) * (1 - PRE_TAX);
          System.out.println ("\n" + String.format("$%,.2f", takeHomePay) + ".");
 
         /*
