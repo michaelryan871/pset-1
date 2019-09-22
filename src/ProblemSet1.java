@@ -119,7 +119,20 @@ public class ProblemSet1 {
          * What is my take-home pay each check?
          */
 
-
+         final double SALARY = 117000;
+         final double FEDERAL_TAX = 0.24;
+         final double STATE_TAX = 0.0637;
+         final double PRE_TAX = 0.07;
+         /*
+           4,875 every two weeks
+           1170 --> FEDERAL_TAX
+           341.25 --> STATE_TAX
+           310.5375 PRE_TAX
+           0.3737%
+         */
+         double completeSalary = (SALARY / 24);
+         double takeHomePay = completeSalary * (1 - FEDERAL_TAX) * (1 - STATE_TAX) * (1 - PRE_TAX);
+         System.out.println ("\n" + String.format("$%,.2f", takeHomePay) + ".");
 
         /*
          * Exercise 7.
