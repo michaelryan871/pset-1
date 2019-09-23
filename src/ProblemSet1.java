@@ -170,13 +170,13 @@ public class ProblemSet1 {
 
          int year = 2020;
          boolean yearIsLeapYear = (year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0));
-         System.out.println("\n" + year + " is a leap year..." + yearIsLeapYear + ".");
+         System.out.println("\n"  + year + " is a leap year..." + yearIsLeapYear + ".");
          int yearTwo = 2100;
          boolean yearIsLeapYearTwo = (yearTwo % 4 == 0) && ((yearTwo % 100 != 0) || (yearTwo % 400 == 0));
-         System.out.println("\n" + yearTwo + " is a leap year..." + yearIsLeapYearTwo + ".");
+         System.out.println(yearTwo + " is a leap year..." + yearIsLeapYearTwo + ".");
          int yearThree = 2400;
          boolean yearIsLeapYearThree = (yearThree % 4 == 0) && ((yearThree % 100 != 0) || (yearThree % 400 == 0));
-         System.out.println("\n" + yearThree + " is a leap year..." + yearIsLeapYearThree+ ".");
+         System.out.println(yearThree + " is a leap year..." + yearIsLeapYearThree+ ".");
 
 
 
