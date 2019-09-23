@@ -155,6 +155,11 @@ public class ProblemSet1 {
          * What is the surface area of a standard Cornhole board?
          */
 
+         final double BOARD_LENGTH = 48;
+         final double BOARD_WIDTH = 24;
+         final double DIAMETER = 6;
+         double cornholeBoardArea = BOARD_LENGTH * BOARD_WIDTH - Math.PI * Math.pow(DIAMETER/2, 2);
+         System.out.println("\n" + String.format("%,.2f", cornholeBoardArea) + " square inches.");
 
         /*
          * Exercise 9.
