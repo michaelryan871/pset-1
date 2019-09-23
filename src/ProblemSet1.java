@@ -141,6 +141,12 @@ public class ProblemSet1 {
          * people will be on the last bus?
          */
 
+         final double STUDENTS = 273;
+         final double TEACHERS = 28;
+         final double CAPACITY = 54;
+         double amountOfBuses = (STUDENTS + TEACHERS) / 54;
+         double leftOver = (STUDENTS + TEACHERS) % 54;
+         System.out.println ("\n" + String.format("%.0f", amountOfBuses) + " buses are needed, with " + String.format("%.0f", leftOver) + " passengers on the last bus.");
 
 
         /*
@@ -150,12 +156,23 @@ public class ProblemSet1 {
          */
 
 
-
         /*
          * Exercise 9.
          *
          * Are the years 2020, 2100, and 2400 leap years?
          */
+
+
+         int year = 2020;
+         boolean yearIsLeapYear = (year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0));
+         System.out.println("\n" + year + " is a leap year..." + yearIsLeapYear + ".");
+         int yearTwo = 2100;
+         boolean yearIsLeapYearTwo = (yearTwo % 4 == 0) && ((yearTwo % 100 != 0) || (yearTwo % 400 == 0));
+         System.out.println("\n" + yearTwo + " is a leap year..." + yearIsLeapYearTwo + ".");
+         int yearThree = 2400;
+         boolean yearIsLeapYearThree = (yearThree % 4 == 0) && ((yearThree % 100 != 0) || (yearThree % 400 == 0));
+         System.out.println("\n" + yearThree + " is a leap year..." + yearIsLeapYearThree+ ".");
+
 
 
 
@@ -166,6 +183,11 @@ public class ProblemSet1 {
          */
 
 
+
+          // T = 38F
+          // v = 14MPH
+          double windChill = (35.74) + (0.6215)* (38) + (0.4275 * (38) - 35.75) * Math.pow(14, 0.16);
+          System.out.println("\n" + String.format("%.1f", windChill) + " degrees.");
 
     }
 }
